@@ -1,0 +1,601 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mix Festival</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:black;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* MENU */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111;
+    padding:20px;
+    z-index:1000;
+    text-align:center;
+    box-shadow:0 0 15px #ff00ff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00ffff;
+}
+
+/* HERO */
+
+.hero{
+    background:url("foto1.png") center no-repeat; 
+    background-size:contain; 
+    background-color:black; 
+    height:100vh; 
+    display:flex; 
+    justify-content:center;
+    align-items:center; 
+    text-align:center; 
+    padding:20px;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.55); 
+    padding:40px; 
+    border-radius:20px; 
+    box-shadow:0 0 25px #ff00ff;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#ff00ff;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin-top:15px;
+}
+
+/* SEÇÕES */
+
+section{
+    padding:100px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+    color:#00ffff;
+}
+
+/* HISTÓRIA */
+
+.historia p{
+    margin-bottom:20px;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+/* PROGRAMAÇÃO */
+
+.programacao img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 0 20px #ff00ff;
+    margin-bottom:40px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th{
+    background:#ff00ff;
+    padding:15px;
+}
+
+td{
+    border:1px solid #444;
+    padding:15px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#111;
+}
+
+tr:hover{
+    background:#1d1d1d;
+}
+
+.spotify-link{
+    color:#00ffff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.spotify-link:hover{
+    color:#ff00ff;
+}
+
+/* INGRESSOS */
+
+.cards{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:#111;
+    border:2px solid #ff00ff;
+    width:300px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+    box-shadow:0 0 15px rgba(255,0,255,0.5);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#00ffff;
+}
+
+.card ul{
+    list-style:none;
+    margin-bottom:20px;
+}
+
+.card li{
+    margin:10px 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#ff00ff;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#00ffff;
+    color:black;
+}
+
+/* LOCAL */
+
+.local p{
+    margin-bottom:20px;
+    text-align:center;
+    font-size:1.1rem;
+}
+
+.local a{
+    color:#00ffff;
+}
+
+/* CONTATO */
+
+.contato{
+    text-align:center;
+}
+
+.contato a{
+    display:block;
+    margin:15px 0;
+    color:#00ffff;
+    text-decoration:none;
+    font-size:1.1rem;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    padding:30px;
+    text-align:center;
+    margin-top:50px;
+    border-top:2px solid #ff00ff;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    nav{
+        padding:15px 5px;
+    }
+
+    nav a{
+        margin:8px;
+        font-size:14px;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#historia">História</a>
+    <a href="#programacao">Programação</a>
+    <a href="#ingressos">Ingressos</a>
+    <a href="#localizacao">Localização</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+    
+</section>
+
+<!-- HISTÓRIA -->
+
+<section class="historia" id="historia">
+
+<h2>História do Festival</h2>
+
+<p>
+O Mix Festival nasceu da ideia de reunir diferentes estilos musicais em um único evento, conectando pessoas através da música e da cultura brasileira.
+</p>
+
+<p>
+Com dedicação e criatividade, o festival cresceu e se transformou em uma experiência inesquecível para fãs de todos os ritmos.
+</p>
+
+<p>
+Hoje o Mix Festival representa diversidade, emoção e muita música, reunindo artistas de diferentes gêneros em uma grande celebração.
+</p>
+
+</section>
+
+<!-- PROGRAMAÇÃO -->
+
+<section class="programacao" id="programacao">
+
+<h2>Programação Oficial</h2>
+
+<table>
+
+<tr>
+<th>Dia</th>
+<th>Gênero</th>
+<th>Artistas</th>
+<th>Spotify</th>
+</tr>
+
+<tr>
+<td>09/06</td>
+<td>Sertanejo</td>
+
+<td>
+Henrique & Juliano<br>
+Bruno & Marrone<br>
+Maiara & Maraísa<br>
+Luan Santana
+</td>
+
+<td>
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/3p7PcrEHaaKLJnPUGOtRlT" target="_blank">Henrique & Juliano</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/5JXhkyafynxCvxtov7C1PV" target="_blank">Bruno & Marrone</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/59jlthNnbmim5l9tmNA7se" target="_blank">Maiara & Maraísa</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/3qvcCP2J0fWi0m0uQDUf6r" target="_blank">Luan Santana</a>
+</td>
+</tr>
+
+<tr>
+<td>10/06</td>
+<td>Funk</td>
+
+<td>
+Pedro Sampaio<br>
+Anderson Neiff<br>
+Lexa<br>
+Anitta
+</td>
+
+<td>
+<a class="spotify-link" href="https://open.spotify.com/playlist/7EZe6GrP4Y9s71dKTXi6FY" target="_blank">Pedro Sampaio</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/0DLzO3qfGGEJyXwLflcgXK" target="_blank">Anderson Neiff</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/0jTDeBJQr3unrK29LklnAv" target="_blank">Lexa</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/7FNnA9vBm6EKceENgCGRMb" target="_blank">Anitta</a>
+</td>
+</tr>
+
+<tr>
+<td>11/06</td>
+<td>Samba & Pagode</td>
+
+<td>
+Turma do Pagode<br>
+Sorriso Maroto<br>
+Menos é Mais<br>
+Ludmilla
+</td>
+
+<td>
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/5JG9GISYjRLQUJMH2C6iJ5" target="_blank">Turma do Pagode</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/1fUSLFr4WUBx7joEcGwpvG" target="_blank">Sorriso Maroto</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/6vTqEFbTtTRJsuIpzZgjxi" target="_blank">Menos é Mais</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/3CDoRporvSjdzTrm99a3gi" target="_blank">Ludmilla</a>
+</td>
+</tr>
+
+<tr>
+<td>12/06</td>
+<td>Forró</td>
+
+<td>
+Nattan<br>
+João Gomes<br>
+Zé Vaqueiro<br>
+Wesley Safadão
+</td>
+
+<td>
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/1SXhEXzOTF7YeuQX59m7pT" target="_blank">Nattan</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/4JNo6Q5KdcRf1vtSX9mB0S" target="_blank">João Gomes</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/5K8Rmjmf4RZFffz94EmBRt" target="_blank">Zé Vaqueiro</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/1AL2GKpmRrKXkYIcASuRFa" target="_blank">Wesley Safadão</a>
+</td>
+</tr>
+
+<tr>
+<td>13/06</td>
+<td>Brega</td>
+
+<td>
+Raphaela Santos<br>
+Silvano Sales<br>
+Natanzinho Lima<br>
+Pablo
+</td>
+
+<td>
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/1xUYzPQi0zdezdLkEjuqQH" target="_blank">Raphaela Santos</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/0HFoOA61ShFCVKyKUPoN6B" target="_blank">Silvano Sales</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/0Il5vC8lqunSFNav4mMLxU" target="_blank">Natanzinho Lima</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/2uOlKKhuUUWlTITCYYUuIK" target="_blank">Pablo</a>
+</td>
+</tr>
+
+<tr>
+<td>14/06</td>
+<td>Rock</td>
+
+<td>
+Supercombo<br>
+Paula Toller<br>
+Nando Reis<br>
+Pitty
+</td>
+
+<td>
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/track/6EmC6JFwF0Aq92ajBPKYiO" target="_blank">Supercombo</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/5BQveHScm6btG6jfbxwyfs" target="_blank">Paula Toller</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/7n1XMwvxPf10t4OX6h6Ufy" target="_blank">Nando Reis</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/2dmQ0vMD3THLMcz7DsvfaT" target="_blank">Pitty</a>
+</td>
+</tr>
+
+<tr>
+<td>15/06</td>
+<td>Reggae</td>
+
+<td>
+Armandinho<br>
+Natiruts<br>
+Maneva<br>
+Edson Gomes
+</td>
+
+<td>
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/3h7RaVXBvdSNa7LXQtVYqH" target="_blank">Armandinho</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/4PhdYoQGH8s1xee81dqQOO" target="_blank">Natiruts</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/1OFP2fSFWTfJ80rzUo5AGb" target="_blank">Maneva</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/4kFDUmta3ihdpLBVLh1Vhw" target="_blank">Edson Gomes</a>
+</td>
+</tr>
+
+<tr>
+<td>16/06</td>
+<td>MPB</td>
+
+<td>
+Gilberto Gil<br>
+Melim<br>
+Vanessa da Mata<br>
+Ana e Vitória
+</td>
+
+<td>
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/7oEkUINVIj1Nr3Wnj8tzqr" target="_blank">Gilberto Gil</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/6uYrXgVHctAJtIdSODcyLJ" target="_blank">Melim</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/57pVvBwa3ZCR9LsVlkLXj7" target="_blank">Vanessa da Mata</a><br><br>
+
+<a class="spotify-link" href="https://open.spotify.com/intl-pt/artist/1sPg5EHuQXTMElpZ4iUgXe" target="_blank">Ana e Vitória</a>
+</td>
+</tr>
+
+</table>
+<br><br>
+
+<center>
+    <img src="foto3.png" width="35%" alt="Logo Mix Festival">
+</center>
+
+</section>
+
+<!-- INGRESSOS -->
+
+<section id="ingressos">
+
+<h2>Ingressos</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Pista - R$70</h3>
+
+<ul>
+<li>Área comum</li>
+<li>Acesso aos shows</li>
+<li>Melhor custo benefício</li>
+</ul>
+
+<a href="#" class="btn">Comprar Agora</a>
+</div>
+
+<div class="card">
+<h3>Front Stage - R$130</h3>
+
+<ul>
+<li>Área próxima ao palco</li>
+<li>Visão privilegiada</li>
+<li>Banheiros exclusivos</li>
+</ul>
+
+<a href="#" class="btn">Comprar Agora</a>
+</div>
+
+<div class="card">
+<h3>Camarote VIP - R$200</h3>
+
+<ul>
+<li>Entrada VIP</li>
+<li>Lounge exclusivo</li>
+<li>Área premium</li>
+</ul>
+
+<a href="#" class="btn">Comprar Agora</a>
+</div>
+
+</div>
+
+</section>
+<br>
+<center>
+    <img src="foto2.png" width="35%" alt="mix-ingresso">
+</center>
+
+<!-- LOCALIZAÇÃO -->
+
+<section class="local" id="localizacao">
+
+<h2>Localização</h2>
+
+<p>
+Arena 177 - Garanhuns/PE
+</p>
+
+<p>
+Shows das 21h às 03h
+</p>
+
+<p>
+<a href="https://www.google.com/maps/" target="_blank">
+Ver localização no mapa
+</a>
+</p>
+
+</section>
+
+<!-- CONTATO -->
+
+<section class="contato" id="contato">
+
+<h2>Contato</h2>
+
+<a href="tel:+5587998026089">
+📞 (87) 99802-6089
+</a>
+
+<a href="mailto:mixfestival@gmail.com">
+📧 mixfestival@gmail.com
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Mix Festival - Todos os direitos reservados</p>
+
+</footer>
+
+</body>
+</html>
+```
